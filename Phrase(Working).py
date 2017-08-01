@@ -24,7 +24,7 @@ def remove_punctuation(text):
     return text
 
 
-document_text = open('DataFiles/script.txt', 'r')
+document_text = open('YOURDIRECTORY/YOURFILE', 'r')
 text_string = document_text.read().lower()
 Q = remove_punctuation(text_string)
 

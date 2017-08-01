@@ -12,7 +12,7 @@ from collections import Counter
 
 
 frequency = {}
-document_text = open('DataFiles/script.txt', 'r')
+document_text = open('YOURDIRECTORY/YOURFILE', 'r')
 text_string = document_text.read().lower()
 match_pattern = re.findall(r'\b[a-z]{3,15}\b', text_string)
 
