@@ -17,7 +17,9 @@ from nltk.tokenize import TweetTokenizer
 
 
 def remove_punctuation(text):
-    # Removes all punctuation and conotation from the string and returns a 'plain' string
+    """
+    Removes all punctuation and conotation from the string and returns a 'plain' string
+    """
     punctuation2 = '-&'+'®©™€â´‚³©¥ã¼•ž®è±äüöž!@#Â“§$%^*()î_+€$=¿{”}[]:«;"»\â¢|<>,.?/~`0123456789'
     for sign in punctuation2:
         text = text.replace(sign, " ")
@@ -39,8 +41,8 @@ for token in tokens:
 bi_tokens = Counter(bigrams(tokens))
 tri_tokens = Counter(trigrams(tokens))
 
- 
-        
+
+
 od = collections.OrderedDict(tri_tokens.most_common())
 import pandas as pd
 df = pd.DataFrame.from_dict(od, orient='index').reset_index()
