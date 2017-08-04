@@ -15,7 +15,6 @@ from nltk import trigrams
 #Use tweet tokenizer to prevent contracted words from spliting
 from nltk.tokenize import TweetTokenizer
 
-
 def remove_punctuation(text):
     """
     Removes all punctuation and conotation from the string and returns a 'plain' string
@@ -24,7 +23,6 @@ def remove_punctuation(text):
     for sign in punctuation2:
         text = text.replace(sign, " ")
     return text
-
 
 document_text = open('YOURDIRECTORY/YOURFILE', 'r')
 text_string = document_text.read().lower()
