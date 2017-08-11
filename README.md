@@ -6,5 +6,5 @@ These scripts count and ranks the frequency keywords and variable # of word phra
 2) phrase.py:
    Counts phrase frequency for a single file and generates an html table with the results.
 3) multi-file-ngrams.py:
-   Counts term frequency for phrases across a specified file type in a given directory for all files of that given type and generates an html table with the results.
+   Counts term frequency for phrases across a specified file type in a given directory for all files of that given type and generates an html table with the aggregate results.
 
