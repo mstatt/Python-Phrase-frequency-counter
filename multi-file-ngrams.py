@@ -25,7 +25,7 @@ def remove_punctuation(text):
 phrase_len = 4
 
 corpus = []
-path = 'DataFiles/'
+path = 'YOURDIRECTORY/'
 
 file_list = []
 os.chdir(path)

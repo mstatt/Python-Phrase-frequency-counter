@@ -4,7 +4,6 @@ Created on Sat Jul 29 11:48:25 2017
 
 @author: MStattelman
 """
-
 import re
 import os
 import nltk
@@ -38,8 +37,6 @@ for token in tokens:
     unigrams[token] += 1
 bi_tokens = Counter(bigrams(tokens))
 tri_tokens = Counter(trigrams(tokens))
-
-
 
 od = collections.OrderedDict(tri_tokens.most_common())
 import pandas as pd
