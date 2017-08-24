@@ -7,6 +7,7 @@ Created on Sat Jul 29 11:48:25 2017
 import re
 import os
 import nltk
+import textract
 import collections
 from collections import Counter
 from nltk import bigrams
@@ -26,6 +27,9 @@ def remove_punctuation(text):
 document_text = open('YOURDIRECTORY/YOURFILE', 'r')
 text_string = document_text.read().lower()
 Q = remove_punctuation(text_string)
+
+# Comment out the above 3 lines and Uncomment the line below if you are using .docx, .pdf, .html, .pptx files
+#Q = textract.process("YOURDIRECTORY/YOURFILE.extension")
 
 tknzr = TweetTokenizer()
 tokens = tknzr.tokenize(Q)
